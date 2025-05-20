@@ -1,5 +1,6 @@
 # === Sales Forecast (Prophet) ===
-# Phat Nguyen Cong - Github: https://github.com/paht2005
+# Phat Nguyen Cong 
+# Github: https://github.com/paht2005
 
 import pandas as pd
 from prophet import Prophet

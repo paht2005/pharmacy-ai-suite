@@ -1,5 +1,6 @@
 # === Symptom-based Drug Suggestion ===
-# Phat Nguyen Cong - Github: https://github.com/paht2005
+# Phat Nguyen Cong 
+# Github: https://github.com/paht2005
 
 # Rule-based symptom to condition mapping
 medical_knowledge = {

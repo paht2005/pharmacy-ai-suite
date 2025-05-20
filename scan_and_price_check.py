@@ -1,5 +1,6 @@
 # === Barcode Scan and Price Check ===
-# Phat Nguyen Cong - Github: https://github.com/paht2005
+# Phat Nguyen Cong 
+#  Github: https://github.com/paht2005
 
 import cv2
 import easyocr

@@ -1,5 +1,6 @@
 # === Warhouse Management and Medical Consultant ===
-# Phat Nguyen Cong - Github: https://github.com/paht2005
+# Phat Nguyen Cong 
+# Github: https://github.com/paht2005
 
 # Dependencies
 from transformers import pipeline

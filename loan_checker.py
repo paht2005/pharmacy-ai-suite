@@ -1,5 +1,6 @@
 # === Loan Approval Predictor ===
-# Phat Nguyen Cong - Github: https://github.com/paht2005
+# Phat Nguyen Cong 
+#  Github: https://github.com/paht2005
 
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd

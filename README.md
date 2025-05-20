@@ -191,5 +191,5 @@ Feel free to fork, pull request, or open issues. Ideas welcome!
 
 --- 
 ## 📬 Contact
-Contact for work: **Nguyễn Công Phát** – congphatnguyen.work@gmail.com
-[Github](https://github.com/paht2005) 
+- Contact for work: **Nguyễn Công Phát** – congphatnguyen.work@gmail.com
+- [Github](https://github.com/paht2005) 

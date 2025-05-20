@@ -1,5 +1,6 @@
 # ===  Drug Similarity Search===
-# Phat Nguyen Cong - Github: https://github.com/paht2005
+# Phat Nguyen Cong 
+# Github: https://github.com/paht2005
 
 from rdkit import Chem
 from rdkit.Chem import AllChem, DataStructs

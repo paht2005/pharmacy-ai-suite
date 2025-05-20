@@ -108,9 +108,69 @@ python main_api_app.py
 ```
 ---
 ## ✅ Example Output
-- 📄 John_Doe_CV.pdf — Match Score: 87.6%
-- 📄 Jane_Smith_CV.pdf — Match Score: 65.4%
 
+### 1. Symptom Checker
+```bash
+Input: fever cough fatigue
+Output: Condition: Flu | Suggested Drug: Paracetamol
+```
+### 2. Drug Similarity
+```bash
+Input: SMILES of Paracetamol
+Output: Ibuprofen (0.72), Naproxen (0.68)...
+```
+### 3. Conversational Doctor
+```bash
+User: I have a headache
+Doctor: Have you also experienced nausea or light sensitivity?
+```
+### 4. Rule vs LLM Diagnosis
+```bash
+Rule-based: Flu
+LLM-based: Possible viral infection. Rest and hydration advised.
+```
+### 5. Review Analyzer
+```bash
+Sentiment: POSITIVE (0.96)
+Aspects: ['staff', 'service']
+Summary: The service was fast and staff very helpful.
+```
+### 6. POS Invoice
+```bash
+Paracetamol x2 = $3.00
+ORS Pack x1 = $0.80
+Total = $3.80
+```
+### 7. Churn Prediction
+```bash
+Input: {'tenure': 1, 'contract': 'month-to-month'}
+Result: ⚠️ Leaving Risk
+```
+### 8. Loan Approval
+```bash
+Input: age=25, income=50000, credit_score=700
+Result: ✅ Approved
+```
+### 9. Sales Forecast
+```bash
+Output file: forecast.csv with predicted 'yhat' values
+```
+### 10. Barcode & Price Scanner
+```bash
+Output: ['$5.99', '$12.49'] from image with shelf tags
+```
+
+--- 
+## 🚀 Enhancements in CLI & AP
+### CLI Mode (``main_cli_app.py``)
+- Select options 1–10 from a simple numbered interface
+- Inputs handled via keyboard
+- Forecast saved as CSV
+
+### API Mode (``main_api_app.py``)
+- Exposes ``/predict_churn``, ``/diagnose``, ``/chat``, ``/forecast``, etc.
+- Accepts JSON payloads
+- Can be plugged into a frontend later (e.g., React/Flutter)
 --- 
 ## 🧭 Future Work
 - Export results to CSV
@@ -130,33 +190,6 @@ Feel free to:
 - Submit pull requests
 - Report bugs
 - Suggest new features
-
---- 
-## 🧠 Acknowledgements
-
-### 1. What is Ollama?
-- [Ollama](https://ollama.ai/) is a tool for running lightweight open-source LLMs (like LLaMA 2, Mistral, Phi, etc.) **locally on your machine** with a simple CLI.
-- In this project, Ollama is used to **summarize PDF resumes** into 3–5 bullet points using models like `llama2`.
-
-### 2. Install Ollama (Optional for LLM Summary)
-If you want to enable **AI-powered resume summarization**, install Ollama:
-- Download Ollama: https://ollama.com/download
-- Install a model (example: `llama2`):
-```bash
-ollama run llama2
-```
-- After installation, make sure the `ollama` command is available in your system PATH.
-
-### 3. Troubleshooting Ollama Issues
-If you see this error:
-```bash
-FileNotFoundError: [WinError 2] The system cannot find the file specified
-```
-Make sure that:
-- Ollama is installed correctly
-- The `ollama` CLI is in your system `PATH`
-- You’ve downloaded a model (like `llama2`) with `ollama run llama2`
-
 
 --- 
 ## 📬 Contact

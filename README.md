@@ -173,11 +173,11 @@ Output: ['$5.99', '$12.49'] from image with shelf tags
 - Can be plugged into a frontend later (e.g., React/Flutter)
 --- 
 ## 🧭 Future Work
-- Export results to CSV
-- Use named-entity recognition (NER) for skill extraction
-- Add job role suggestions via LLM
-- Multi-language support (English + Vietnamese)
-
+- ✅ Add user authentication layer
+- ✅ Add database backend (SQLite/PostgreSQL)
+- 📷 Real-time camera price scanner
+- 🌐 Host web UI (Streamlit or Flask Web)
+- 🧪 Add automated tests (PyTest)
 ---
 ## 📄 License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

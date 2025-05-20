@@ -1,6 +1,7 @@
 # === API App ===
 # FastAPI REST API 
-# Phat Nguyen Cong - https://github.com/paht2005
+# Phat Nguyen Cong 
+# Github: https://github.com/paht2005
 
 from fastapi import FastAPI
 from pydantic import BaseModel

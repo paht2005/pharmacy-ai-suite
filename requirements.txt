@@ -10,3 +10,4 @@ numpy==1.26.4
 prophet
 spacy
 fastapi
+pydantic

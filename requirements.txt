@@ -1,0 +1,12 @@
+transformers 
+scikit-learn 
+pandas
+rdkit-pypi 
+torch
+easyocr
+matplotlib
+opencv-python
+numpy==1.26.4
+prophet
+spacy
+fastapi

@@ -96,8 +96,8 @@ A modular AI-powered system for pharmacies, clinics, and medical retail chains. 
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/paht2005/Healthcare-project.git
-cd Healthcare-project
+git clone https://github.com/paht2005/pharmacy-ai-suite.git
+cd pharmacy-ai-suite
 pip install -r requirements.txt
 
 # CLI Mode:

@@ -186,11 +186,10 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ---
 ## 🤝 Contributing
 I welcome contributions to improve this project!
-Feel free to:
-- Submit pull requests
-- Report bugs
-- Suggest new features
+Feel free to fork, pull request, or open issues. Ideas welcome!
+
 
 --- 
 ## 📬 Contact
 Contact for work: **Nguyễn Công Phát** – congphatnguyen.work@gmail.com
+[Github](https://github.com/paht2005) 

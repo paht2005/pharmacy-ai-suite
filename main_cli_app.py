@@ -1,6 +1,7 @@
 # === CLI App ===
 
-# Phat Nguyen Cong - https://github.com/paht2005
+# Phat Nguyen Cong 
+# GIthub: https://github.com/paht2005
 
 from symptom_suggester import suggest_condition, suggest_drug
 from drug_similarity import search_similar_drugs

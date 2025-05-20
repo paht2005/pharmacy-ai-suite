@@ -1,5 +1,6 @@
 # === Review Analyzer ===
-# Phat Nguyen Cong - Github: https://github.com/paht2005
+# Phat Nguyen Cong 
+#  Github: https://github.com/paht2005
 
 from transformers import pipeline
 import spacy

@@ -1,4 +1,4 @@
-# 💊 Pharmacy AI-suite Toolkit (10-in-1 CLI & API System)
+# Pharmacy AI-suite Toolkit (10-in-1 CLI & API System)
 
 A modular AI-powered system for pharmacies, clinics, and medical retail chains. It includes **10 intelligent modules** for tasks like inventory management, medical consulting, customer prediction, drug similarity search, OCR-based pricing, and more — all unified into a **CLI interface** and **REST API service**.
 
@@ -6,23 +6,23 @@ A modular AI-powered system for pharmacies, clinics, and medical retail chains. 
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
-1. [✨ Project Overview](#-project-overview)  
-2. [🚀 Features](#-features)  
-3. [🗂️ Project Structure](#-project-structure)
-4. [🧰 Tech Stack](#-tech-stack)
-5. [⚙️ Installation](#-installation)  
-6. [✅ Example Output](#-example-output)
-7. [🚀 Enhancements in CLI & API](#-enhancements-in-cli-&-api)
-8. [🧭 Future Work](#-future-work)  
-9. [📄 License](#-license)
-10. [🤝 Contributing](#-contributing)
-11. [📬 Contact](#-contact)
+1. [Project Overview](#-project-overview)  
+2. [Features](#-features)  
+3. [Project Structure](#-project-structure)
+4. [Tech Stack](#-tech-stack)
+5. [Installation](#-installation)  
+6. [Example Output](#-example-output)
+7. [Enhancements in CLI & API](#-enhancements-in-cli-&-api)
+8. [Future Work](#-future-work)  
+9. [License](#-license)
+10. [Contributing](#-contributing)
+11. [Contact](#-contact)
 
 ---
 
-## ✨ Project Overview
+## Project Overview
 
 ### 1. This is a multi-module AI system designed to assist pharmacy operations and decision-making. It combines:
 - AI-based medical consultation & triage
@@ -38,7 +38,7 @@ A modular AI-powered system for pharmacies, clinics, and medical retail chains. 
 
 ---
 
-## 🚀 Features
+## Features
 
 | Module                     | Description                                         |
 |----------------------------|-----------------------------------------------------|
@@ -54,7 +54,7 @@ A modular AI-powered system for pharmacies, clinics, and medical retail chains. 
 | ``Barcode/Price OCR``      |Detect & extract price from image                    |
 
 ---
-## 🗂️ Project Structure
+## Project Structure
 ```
 ├── main_cli_app.py           # CLI app for testing all modules
 ├── main_api_app.py           # Flask REST API
@@ -76,7 +76,7 @@ A modular AI-powered system for pharmacies, clinics, and medical retail chains. 
 ```
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Purpose                  | Library                                 |
 |------------------------  |-----------------------------------------|
@@ -93,7 +93,7 @@ A modular AI-powered system for pharmacies, clinics, and medical retail chains. 
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/paht2005/pharmacy-ai-suite.git
@@ -107,7 +107,7 @@ python main_cli_app.py
 python main_api_app.py
 ```
 ---
-## ✅ Example Output
+## Example Output
 
 ### 1. Symptom Checker
 ```bash
@@ -149,7 +149,7 @@ Result: ⚠️ Leaving Risk
 ### 8. Loan Approval
 ```bash
 Input: age=25, income=50000, credit_score=700
-Result: ✅ Approved
+Result: Approved
 ```
 ### 9. Sales Forecast
 ```bash
@@ -161,7 +161,7 @@ Output: ['$5.99', '$12.49'] from image with shelf tags
 ```
 
 --- 
-## 🚀 Enhancements in CLI & AP
+## Enhancements in CLI & AP
 ### CLI Mode (``main_cli_app.py``)
 - Select options 1–10 from a simple numbered interface
 - Inputs handled via keyboard
@@ -172,24 +172,24 @@ Output: ['$5.99', '$12.49'] from image with shelf tags
 - Accepts JSON payloads
 - Can be plugged into a frontend later (e.g., React/Flutter)
 --- 
-## 🧭 Future Work
-- ✅ Add user authentication layer
-- ✅ Add database backend (SQLite/PostgreSQL)
-- 📷 Real-time camera price scanner
-- 🌐 Host web UI (Streamlit or Flask Web)
-- 🧪 Add automated tests (PyTest)
+## Future Work
+- Add user authentication layer
+- Add database backend (SQLite/PostgreSQL)
+- Real-time camera price scanner
+- Host web UI (Streamlit or Flask Web)
+- Add automated tests (PyTest)
 ---
-## 📄 License
+## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 
 ---
-## 🤝 Contributing
+## Contributing
 I welcome contributions to improve this project!
 Feel free to fork, pull request, or open issues. Ideas welcome!
 
 
 --- 
-## 📬 Contact
+## Contact
 - Contact for work: **Nguyễn Công Phát** – congphatnguyen.work@gmail.com
 - [Github](https://github.com/paht2005) 

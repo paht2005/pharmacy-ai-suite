@@ -1,16 +1,17 @@
-# ===  Churn Predictor ===
-# Phat Nguyen Cong 
-
-# Github: https://github.com/paht2005
-
+# Customer Churn Prediction Model
+# Phat Nguyen Cong - https://github.com/paht2005
 
 import pandas as pd
+import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import classification_report
 
-# Training example
-churn_data = pd.DataFrame({
+# Simulated dataset
+data = pd.DataFrame({
     "tenure": [1, 12, 24, 5, 36],
     "monthly_charges": [70, 50, 65, 80, 60],
     "total_charges": [70, 600, 1500, 400, 2160],
@@ -19,20 +20,50 @@ churn_data = pd.DataFrame({
     "churn": [1, 0, 0, 1, 0]
 })
 
-le_contract = LabelEncoder()
-le_support = LabelEncoder()
+# Define feature columns
+categorical_features = ['contract', 'tech_support']
+numeric_features = ['tenure', 'monthly_charges', 'total_charges']
+target_column = 'churn'
 
-churn_data['contract'] = le_contract.fit_transform(churn_data['contract'])
-churn_data['tech_support'] = le_support.fit_transform(churn_data['tech_support'])
+# Split data
+X = data.drop(columns=target_column)
+y = data[target_column]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-X = churn_data.drop("churn", axis=1)
-y = churn_data["churn"]
-model_churn = RandomForestClassifier().fit(X, y)
+# Pipeline for preprocessing and classification
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features)
+    ],
+    remainder='passthrough'  # Leave numeric columns as is
+)
 
-def predict_churn(customer: dict) -> str:
-    df = pd.DataFrame([customer])
-    df['contract'] = le_contract.transform(df['contract'])
-    df['tech_support'] = le_support.transform(df['tech_support'])
-    prediction = model_churn.predict(df)[0]
-    return "⚠️ Leaving Risk" if prediction == 1 else "✅ Stable"
+model = Pipeline(steps=[
+    ('preprocessor', preprocessor),
+    ('classifier', RandomForestClassifier(n_estimators=100, random_state=42))
+])
 
+# Train model
+model.fit(X_train, y_train)
+
+# Evaluate
+y_pred = model.predict(X_test)
+print("Model Evaluation:\n", classification_report(y_test, y_pred))
+
+# Prediction function
+def predict_churn(customer_info: dict) -> str:
+    """
+    Predicts if a customer is likely to churn based on their data.
+
+    Args:
+        customer_info (dict): Customer features.
+
+    Returns:
+        str: Human-readable churn prediction.
+    """
+    try:
+        input_df = pd.DataFrame([customer_info])
+        prediction = model.predict(input_df)[0]
+        return "Customer is likely to churn." if prediction == 1 else "Customer is likely to stay."
+    except Exception as e:
+        return f"Prediction error: {e}"
